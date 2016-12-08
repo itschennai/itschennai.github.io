@@ -1829,7 +1829,7 @@ textarea
 	border: 0.5px solid green;
 	border-radius: 6px;
 }
-*/
+
 .buttonsubmit {
 		background-image: -moz-linear-gradient(top, #008dad, #007b9d);
 		background-image: -webkit-linear-gradient(top, #008dad, #007b9d);
@@ -1848,3 +1848,4 @@ textarea
 		border: solid 1px #006e8b;
 		box-shadow: inset 0px 0px 0px 1px #18a8c8;
 	}
+*/
