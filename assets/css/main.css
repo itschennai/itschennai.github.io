@@ -1838,12 +1838,11 @@ textarea
 		display: block;
 		width: 80%;
 		padding: 10px 10px 10px 10px;
-		background-color: #007b9d;
-		border-radius: 15px;
-		text-transform: lowercase;
+		background-color: #F02002;
+		border-radius: 95px;
 		text-decoration: none;
 		color: #fff;
-		font-size: 1em;
+		font-size: 1.2em;
 		margin: auto;
 		letter-spacing: -1px;
 		border: solid 1px #006e8b;
