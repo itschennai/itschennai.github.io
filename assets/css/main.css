@@ -1070,15 +1070,16 @@
 	}
 
 	body {
-		font-size: 13.5pt;
-		font-family: sans-serif;
+		font-size: 14pt;
+		line-height: 22px;
 		background-color: #e3e9dc;
-		font-family: 'Ubuntu Condensed', sans-serif;
+		font-family: arial, helvetica, sans-serif;
 		color: #878e83;
 		letter-spacing: -1px;
 	}
 
 	h1, h2, h3, h4 {
+		font-family: Georgia, sans-serif;
 		color: #007897;
 		font-weight: normal;
 	}
@@ -1336,36 +1337,35 @@
 						}
 
 						#header nav a:hover {
-	background-image: -moz-radial-gradient(center, #fff, #008dab, #fff);
-	background-image: -webkit-radial-gradient(center, #fff, #008dab, #fff);
-	background-image: -ms-radial-gradient(center, #fff, #008dab, #fff);
-	background-image: radial-gradient(center, #fff, #008dab, #fff);
+	background-image: -moz-linear-gradient(top, #fff, #deeaea, #fff);
+	background-image: -webkit-linear-gradient(top, #fff, #c6d1d0, #fff);
+	background-image: -ms-linear-gradient(top, #fff, #deeaea, #fff);
+	background-image: linear-gradient(top, #fff, #deeaea, #fff);
 	background-color: #C8B8B8;
-	color: #fff;
-	box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.05), 0px 0px 5px 1px rgba(255, 255, 255, 0.05);
+	color: #fd0707;
 
 							}
 
 		/* Banner */
 
 			#banner-wrapper {
-				background: #c8d2bc url(images/bg1.png);
+				background: #fff;
 				padding: 2em 0;
 			}
 
 			#banner {
-				-moz-box-sizing: content-box;
-				-webkit-box-sizing: content-box;
-				-ms-box-sizing: content-box;
-				box-sizing: content-box;
-				position: relative;
-				width: 1160px;
-				height: 265px;
-				box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-				border-radius: 17px;
-				padding: 20px;
-				background: #ff612e url(images/banner2.gif) no-repeat 20px 20px;
-				background-size: 1160px 265px;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	position: relative;
+	width: 1160px;
+	height: 265px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 17px;
+	padding: 20px;
+	background: #ff612e url(images/banner2.gif) no-repeat 20px 20px;
+	background-size: 1160px 265px;
 			}
 
 				#banner h2 {
@@ -1399,7 +1399,7 @@
 
 			#main {
 				background: #fff;
-				padding: 4em 0;
+				padding: 3em 0 0 0;
 			}
 
 		/* Footer */
@@ -1564,6 +1564,26 @@
 
 			.blog-post-image {
 				width: 100%;
+			}
+			
+			#containr{
+				width:100%;
+				height:280px;
+				display:block;
+				position:relative;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				box-sizing: border-box;
+				border-radius: 17px;
+				padding: 20px;
+				padding-bottom:0px;
+				padding-top:0px;
+			}
+
+			#containr img {
+			  width: 100%;
+			  			   
 			}
 
 		/* Header */
@@ -1849,3 +1869,81 @@ textarea
 		border: solid 1px #006e8b;
 		box-shadow: inset 0px 0px 0px 1px #18a8c8;
 	}
+
+*, *:before, *:after {
+	margin:0;
+	padding:0;
+}
+
+#containr{
+	width:100%;
+	height:280px;
+	position:relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 17px;
+	padding: 20px;
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
+#containr .prevButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('images/left-arrow.png') no-repeat;
+	border: solid 1px #58D91B;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:left top;
+	left:0
+}
+
+#containr .prevButton:hover{ background-position:left bottom;left:0;}
+
+#containr .nextButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('images/right-arrow.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	border: solid 1px #58D91B;
+	z-index:2000;
+	background-position:right top;
+	right:0
+}
+
+#containr .nextButton:hover{background-position:right bottom;right:0;}
+
+#containr ul{
+	width:1160px;
+	height:285px;
+	list-style:none outside none;
+	position:relative;
+	overflow:hidden;
+}
+
+#containr li:first-child{
+	display:list-item;
+	position:absolute;
+}
+
+#containr li{
+	position:absolute;
+	display:none;
+}
+
+#containr img {
+  max-width:95%;
+  height: auto;
+  margin:10px auto;
+  display: block;  
+}
+
+
