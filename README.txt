@@ -2,7 +2,7 @@ Website built by Mustafa.
 
 For ITS Chennai.
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+Feedback, bug reports, and comments are welcome and strongly encouraged :)
 
 Credits:
 
@@ -11,3 +11,4 @@ Credits:
 		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
 		@ajlkn for Minimaxing by HTML5 UP
+		Slick slider (http://kenwheeler.github.io/slick)
