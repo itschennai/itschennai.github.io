@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 /*
 	ITS Chennai - Industrial Tools Syndicate
@@ -38,14 +38,24 @@
 
 	table {
 		border-collapse: collapse;
-		border-spacing: 5px;
+		
+		width: 100%;
 	}
 	
 	th, td {
 		text-align:left;
 		padding: 7px;
-		color:#FFFFFF;
-		letter-spacing: normal;		
+			
+	}
+	
+	tr:nth-child(even) {
+		background-color: #fff;
+		color: #a08888;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: #a08888;
+		color: #fff;
 	}
 	
 	iframe {
@@ -1134,28 +1144,26 @@
 		font-size: 14pt;
 		line-height: 22px;
 		background-color: #e3e9dc;
-		font-family: arial, helvetica, sans-serif;
+		font-family: 'Lato', sans-serif;
 		color: #878e83;
-		letter-spacing: -1px;
+		letter-spacing: normal;
 	}
 
 	h1, h2, h3, h4 {
 		font-family: Georgia, sans-serif;
 		color: #007897;
-		font-weight: normal;
 	}
 
 	h1 {
-		text-transform: lowercase;
+		font-size: 1.8em;
+		margin-bottom: 1em;
+		text-align: center;
 	}
 
 	h2 {
-	text-transform: none;
-	font-size: 1.6em;
-	letter-spacing: 0px;
-	margin-bottom: 1em;
-	font-weight: normal;
-	text-align: center;
+		font-size: 1.6em;
+		margin-bottom: 1em;
+		text-align: center;
 	}
 
 	h3, h4 {
@@ -1181,7 +1189,13 @@
 	}
 
 	strong {
-		color: #474e43;
+		font-weight: bold;
+		color: #36454F;
+	}
+	
+	b {
+		font-weight: bold;
+		color: #686d64;
 	}
 
 	img.left {
@@ -1199,8 +1213,6 @@
 
 	a {
 		color: #5D6DA8;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size:16px;
 		text-decoration: none;
 	}
 
@@ -1238,6 +1250,11 @@
 		margin-bottom: 2em;
 	}
 	
+	ul.product-image-list h3 {
+		text-align:center;
+		color: #007897;
+	}
+	
 	ul.product-image-list li {
 		overflow: hidden;
 		width: 100%;
@@ -1272,11 +1289,11 @@
 		}
 		
 	ul.product-cat li {
-	margin-bottom: 10px;
-	padding-left: 5px;
-	color: rgba(0,0,0,0.78);
-	font-size: 20px;
-	letter-spacing: normal;
+		margin-bottom: 10px;
+		padding-left: 5px;
+		color: rgba(0,0,0,0.78);
+		font-size: 20px;
+		letter-spacing: normal;
 	}
 	
 	ul.product-cat a {
@@ -1290,6 +1307,16 @@
 		text-decoration:underline;
 	}
 	
+	p.contactus {
+		text-align: center;
+	}
+	
+	p.contactus a {
+		font: inherit;
+		text-decoration:inherit;
+		color:inherit;
+	}
+
 	.button {
 		background-image: -moz-linear-gradient(top, #008dad, #007b9d);
 		background-image: -webkit-linear-gradient(top, #008dad, #007b9d);
@@ -1377,21 +1404,21 @@
 			}
 
 			#header {
-	background-image: -moz-linear-gradient(top, #fff);
-	background-image: -webkit-linear-gradient(top, #fff);
-	background-image: -ms-linear-gradient(top, #fff);
-	background-image: linear-gradient(top, #fff);
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	box-sizing: content-box;
-	position: relative;
-	margin: 2.4% 0 1% 0;
-	padding: 0 40px 0 40px;
-	border-radius: 15px;
-	border: solid 1px #006e8b;
-	background-color: #fff;
-	height: 88px;
+				background-image: -moz-linear-gradient(top, #fff);
+				background-image: -webkit-linear-gradient(top, #fff);
+				background-image: -ms-linear-gradient(top, #fff);
+				background-image: linear-gradient(top, #fff);
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+				-ms-box-sizing: content-box;
+				box-sizing: content-box;
+				position: relative;
+				margin: 2.4% 0 1% 0;
+				padding: 0 40px 0 40px;
+				border-radius: 15px;
+				border: solid 1px #006e8b;
+				background-color: #fff;
+				height: 88px;
 			}
 
 				#header h1 {
@@ -1410,18 +1437,17 @@
 					}
 
 				#header nav {
-	position: absolute;
-	right: 40px;
-	top: 1px;
-	line-height: 84px;
-	text-transform: none;
-	font-size: 1.3em;
-	letter-spacing: 0px;
-				}
+						position: absolute;
+						right: 40px;
+						top: 1px;
+						line-height: 84px;
+						text-transform: none;
+						font-size: 1.3em;
+						letter-spacing: 0px;
+					}
 
 					#header nav a {
 						display: inline-block;
-						font-family: "Trebuchet MS", Helvetica, sans-serif;
 						font-size: 21px;
 						text-decoration: none;
 						color: #fd0707;
@@ -1441,14 +1467,13 @@
 						}
 
 						#header nav a:hover {
-	background-image: -moz-linear-gradient(top, #fff, #deeaea, #fff);
-	background-image: -webkit-linear-gradient(top, #fff, #c6d1d0, #fff);
-	background-image: -ms-linear-gradient(top, #fff, #deeaea, #fff);
-	background-image: linear-gradient(top, #fff, #deeaea, #fff);
-	background-color: #C8B8B8;
-	color: #fd0707;
-
-							}
+								background-image: -moz-linear-gradient(top, #fff, #deeaea, #fff);
+								background-image: -webkit-linear-gradient(top, #fff, #c6d1d0, #fff);
+								background-image: -ms-linear-gradient(top, #fff, #deeaea, #fff);
+								background-image: linear-gradient(top, #fff, #deeaea, #fff);
+								background-color: #C8B8B8;
+								color: #fd0707;
+						}
 
 		/* Banner */
 
@@ -1458,19 +1483,20 @@
 			}
 
 			#banner {
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	box-sizing: content-box;
-	position: relative;
-	width: 1160px;
-	height: 265px;
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-	border-radius: 17px;
-	padding: 20px;
-	background: #ff612e url(images/banner2.gif) no-repeat 20px 20px;
-	background-size: 1160px 265px;
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+				-ms-box-sizing: content-box;
+				box-sizing: content-box;
+				position: relative;
+				width: 1160px;
+				height: 265px;
+				box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+				border-radius: 17px;
+				padding: 20px;
+				background: #ff612e url(images/banner2.gif) no-repeat 20px 20px;
+				background-size: 1160px 265px;
 			}
+
 
 				#banner h2 {
 					position: absolute;
@@ -1628,8 +1654,12 @@
 				font-size: 13pt;
 			}
 
-			h2 {
+			h1 {
 				font-size: 1.4em;
+			}
+			
+			h2 {
+				font-size: 1.3em;
 			}
 
 			h3 {
@@ -1685,6 +1715,17 @@
 				width: 100%;
 			}
 			
+			#mobonly {
+				display: none;
+			}
+			
+			ul.sec-category li {
+				list-style-type: square;
+				border-top: solid 1px #fd0707;
+				color:#FF0004;
+				padding: 0.75em 0 0 0;
+				margin-left: 2em;
+			}
 			
 		/* Header */
 
@@ -1792,14 +1833,12 @@
 			}
 
 			#titleBar {
-				background-image: -moz-linear-gradient(top, #008dab, #008dab);
-				background-image: -webkit-linear-gradient(top, #008dab, #008dab);
-				background-image: -ms-linear-gradient(top, #008dab, #008dab);
-				background-image: linear-gradient(top, #008dab, #008dab);
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
+				background: url(../../images/logo.png) #008dab center no-repeat;
+				background-size: 49px 42px ;
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -1811,14 +1850,9 @@
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				text-align: center;
-				color: #008dab;
-				font-size: 1.25em;
-				background-color: #008dab;
-			}
-
-				#titleBar .title {
-						background: url(../../../Untitled.png) right no-repeat;
+		}
+			
+				#titleBar .title {		
 						line-height: 44px;
 				}
 
@@ -1827,16 +1861,13 @@
 					top: 0;
 					left: 0;
 					width: 80px;
-					height: 60px;
+					height: 44px;
 				}
 
 					#titleBar .toggle:after {
-						content: '';
 						position: absolute;
 						left: 4px;
 						top: 4px;
-						color: #fff;
-						text-align: center;
 						line-height: 31px;
 						font-size: 0.8em;
 						width: 50px;
@@ -1984,4 +2015,13 @@ textarea
 	padding-bottom: 15px;
 	height: auto;
 	width: auto\9; /* IE8 */
+}
+
+.whyus {
+	margin-left: 20px;
+}
+
+.whyus li {
+	list-style: disc;
+	padding-bottom:2px;
 }
