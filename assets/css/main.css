@@ -85,17 +85,18 @@
 	}
 	
 	ul.breadcrumb li{
-		font-size: 13px;
+		font-size: 12px;
 		display:inline;
 	}
 	
 	ul.breadcrumb li+li:before {
-		padding: 3px;
+		padding: 1px;
 		content: "/\00a0";
+		font-size: 9px;
 	}
 	
 	ul.breadcrumb a{
-		font-size:13px;
+		font-size:11px;
 	}
 	
 	ul.breadcrumb1 {
@@ -1892,6 +1893,10 @@
 				display: none;
 			}
 			
+			#footer {
+				padding-top: 0;
+			}
+			
 		/* Copyright */
 
 			#copyright {
@@ -1902,8 +1907,9 @@
 				background-image: -ms-linear-gradient(top, #008dab, #007294);
 				background-image: linear-gradient(top, #008dab, #007294);
 				background-color: #007294;
-				padding: 40px;
-				font-size: 0.8em;
+				padding: 15px;
+				padding-bottom: 0px;
+				font-size: 0.9em;
 				line-height: 1.5em;
 			}
 
