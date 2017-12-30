@@ -16,7 +16,6 @@
     }
 
     .slider {
-		
         width: 83%;
         margin: 5px auto;
     }
@@ -27,7 +26,6 @@
 
     .slick-slide img {
       width: 100%;
-	  
     }
 
     .slick-prev:before,
@@ -37,7 +35,7 @@
   </style>
 </head>
 <body>
-		<section class="single-item slider">
+		<section class="responsive slider">
         <div>
       <a href="../products/lead-seals.html" target="_blank"><img src="./slider-images/lead-seal.gif" alt="Lead Seal Round and Square" title="Lead Seal Round and Square"></a>
     </div>
@@ -69,10 +67,10 @@
       <a href="../products/ptfe-thread-seal-teflon-tape.html" target="_blank"><img src="slider-images/teflon-tape.gif" alt="PTFE Teflon Tape" title="PTFE Teflon Tape"></a>
     </div>
 	<div>
-      <a href="../products/sealing-plier.html" target="_blank"><img src="slider-images/sealing-plier.gif" alt="Sealing Plier" title="Sealing Plier"></a>
+      <a href="../products/wire-lock-seal.html" target="_blank"><img src="slider-images/wire-lock-seals.gif" alt="Wire Lock Seal" title="Wire Lock Seal"></a>
     </div>
 	<div>
-      <a href="../products/sealing-plier.html" target="_blank"><img src="slider-images/sealing-plier.gif" alt="Sealing Plier" title="Sealing Plier"></a>
+      <a href="../products/freemans-measuring-tapes.html" target="_blank"><img src="slider-images/measuring-tapes-freemans.gif" alt="FREEMANS Measuring Tapes" title="FREEMANS Measuring Tapes"></a>
     </div>
     <div>
       <a href="../products/sealing-plier.html" target="_blank"><img src="slider-images/sealing-plier.gif" alt="Sealing Plier" title="Sealing Plier"></a>
@@ -85,14 +83,41 @@
   <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
-		$('.single-item').slick({
-		 autoplay: true,
-  		 autoplaySpeed: 800,
-		 fade: true,
-		 cssEase: 'linear'
-		});
-	});
-
+      $('.responsive').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 4,
+	  slidesToScroll: 4,
+	  responsive: [
+		{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});    });
   </script>
 
 </body>
