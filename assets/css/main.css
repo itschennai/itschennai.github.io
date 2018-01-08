@@ -146,7 +146,7 @@
 		border-left-style: groove;
 		margin:15px 0;
 		padding:10px;
-		font-size:13pt;
+		font-size:12pt;
 		line-height: 1.4em;
 		color:#4b4949;
 	}
@@ -1611,6 +1611,13 @@
 						}
 
 		/* Banner */
+		
+			.about {
+				font-size: 11pt;
+				text-align: justify;
+				margin: 0 auto;
+				width: 40em;
+			}
 
 			#banner-wrapper {
 				background: #fff;
@@ -1942,6 +1949,21 @@
 
 			#main {
 				margin-top: 44px;
+			}
+			
+			.about {
+				font-size: 11pt;
+				text-align: justify;
+			}
+			
+			.whyus {
+				text-align: center;
+			}
+			
+			.whyus li {
+				font-size:12pt;
+				display: inline-block;
+				list-style-type: none;
 			}
 
 		/* Footer */ 
